@@ -121,19 +121,18 @@ ul.address li ul.address-text li {
     font-size: 1.2em;
     color: #fff;
     margin-top: 1em;
-    font-weight: 100;
+	font-weight: 100;
 }
 ul.address li ul.address-text li:nth-child(1){
-    width: 20%;
+	width: 20%;
 }
 ul.address li ul.address-text li a {
     color: #fff;
-    text-decoration:none;
+	text-decoration:none;
 }
 ul.address li ul.address-text li a:hover{
     color: #0FF;
 }
-/*--//banner-top--*/
 
 @media (min-width: 992px) {
 	.third {
