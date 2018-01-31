@@ -558,6 +558,31 @@ h2.resp-accordion {
     padding: 0;
 }
 ul.address {
+    margin-top: 2em;
+    border-top: 1px solid #AFAFAF;
+    padding-top: 0.5em;
+}
+ul.address li {
+    display: block;
+}
+ul.address li ul.address-text li {
+    display: inline-block;
+    font-size: 1.2em;
+    color: #fff;
+    margin-top: 1em;
+    font-weight: 100;
+}
+ul.address li ul.address-text li:nth-child(1){
+    width: 20%;
+}
+ul.address li ul.address-text li a {
+    color: #fff;
+    text-decoration:none;
+}
+ul.address li ul.address-text li a:hover{
+    color: #0FF;
+}
+ul.address {
     margin-top: 1em;
 }
 ul.address li ul.address-text li {
