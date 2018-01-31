@@ -108,6 +108,33 @@ ul.about li ul.about-text li a:hover{
     color: #0FF;
 }
 
+ul.address {
+    margin-top: 2em;
+    border-top: 1px solid #AFAFAF;
+    padding-top: 0.5em;
+}
+ul.address li {
+    display: block;
+}
+ul.address li ul.address-text li {
+    display: inline-block;
+    font-size: 1.2em;
+    color: #fff;
+    margin-top: 1em;
+    font-weight: 100;
+}
+ul.address li ul.address-text li:nth-child(1){
+    width: 20%;
+}
+ul.address li ul.address-text li a {
+    color: #fff;
+    text-decoration:none;
+}
+ul.address li ul.address-text li a:hover{
+    color: #0FF;
+}
+/*--//banner-top--*/
+
 @media (min-width: 992px) {
 	.third {
 		width: 33.33333333%;
@@ -556,37 +583,6 @@ h2.resp-accordion {
 @media(max-width:1080px){
 .header-left {
     padding: 0;
-}
-ul.address {
-    margin-top: 2em;
-    border-top: 1px solid #AFAFAF;
-    padding-top: 0.5em;
-}
-ul.address li {
-    display: block;
-}
-ul.address li ul.address-text li {
-    display: inline-block;
-    font-size: 1.2em;
-    color: #fff;
-    margin-top: 1em;
-    font-weight: 100;
-}
-ul.address li ul.address-text li:nth-child(1){
-    width: 20%;
-}
-ul.address li ul.address-text li a {
-    color: #fff;
-    text-decoration:none;
-}
-ul.address li ul.address-text li a:hover{
-    color: #0FF;
-}
-ul.address {
-    margin-top: 1em;
-}
-ul.address li ul.address-text li {
-    margin-top: 0.8em;
 }
 .about, .work, .education, .skills, .portfolio, .contact {
     padding: 4em 0;
