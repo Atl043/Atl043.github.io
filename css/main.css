@@ -218,9 +218,6 @@ p {
 /*--//about--*/
 
 /*--work--*/
-.work {
-    background: #000;
-}
 .work-left {
     text-align: right;
     padding: 3em 5em 0 0;
@@ -313,9 +310,6 @@ p {
 }
 /*--//education--*/
 /*--skills--*/
-.skills{
-	background:#000;
-}
 .bar-grids {
     padding: 0 4em;
 }
