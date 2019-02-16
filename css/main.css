@@ -1,6 +1,167 @@
-/*--
-Author: Andrew Li Created this for personal website and lab website
---*/
+/* Created and updated by Andrew in 2019 Feb */
+.top{
+    padding: 0 50px;
+        width: 100%;
+    margin: auto;
+}
+
+
+.top h1 {
+    font-size: 64.8px;
+    margin-bottom: 5px;
+}
+@media (min-width: 768px){
+    .top h1 {
+        font-size: 100.8px;
+    }
+}
+
+
+.top hr{
+    border: 3px solid #000;
+    -webkit-animation-name: b;
+    animation-name: b;
+    -webkit-animation-duration: .9s;
+    animation-duration: .9s;
+    -webkit-animation-delay: .2s;
+    animation-delay: .2s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-timing-function: ease;
+    animation-timing-function: ease;
+}
+
+/*--img-hover--*/
+.portfolio-grids {
+    margin-top: 2em;
+}
+.grid {
+position: relative;
+overflow:hidden;
+background: #000;
+}
+.grid img {
+opacity: 0.8;
+}
+.grid .figcaption {
+    padding: 2em 2.5em;
+    color: #fff;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.figcaption p {
+    font-size: 16px;
+}
+.grid .figcaption::before,
+.grid .figcaption::after {
+pointer-events: none;
+}
+
+.grid .figcaption{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+
+
+/* Anchor will cover the whole item by default */
+
+.grid img {
+max-width: none;
+width: 100%;
+width: -webkit-calc(100% + 20px);
+width: calc(100% + 20px);
+-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+-moz-transition: opacity 0.35s, -moz-transform 0.35s;
+transition: opacity 0.35s, transform 0.35s;
+-webkit-transform: translate3d(-10px,0,0);
+-moz-transform: translate3d(-10px,0,0);
+transform: translate3d(-10px,0,0);
+-o-transform: translate3d(-10px,0,0);
+-ms-transform: translate3d(-10px,0,0);
+-webkit-backface-visibility: hidden;
+backface-visibility: hidden;
+}
+.grid:hover img {
+-moz-opacity: 0.5;
+opacity: 0.5;
+-webkit-transform: translate3d(0,0,0);
+-moz-transform: translate3d(0,0,0);
+transform: translate3d(0,0,0);
+-o-transform: translate3d(0,0,0);
+-ms-transform: translate3d(0,0,0);
+}
+.grid .figcaption {
+text-align: left;
+}
+.grid h3 {
+    position: relative;
+    overflow: hidden;
+    padding: 0.5em 0;
+-moz-opacity: 0;
+    opacity: 0;
+    text-transform: uppercase;
+    font-size: 2em;
+    color: #fff;
+}
+.grid h3 span {
+    font-weight: 800;
+    margin-left: 5px;
+}
+.grid h3::after {
+position: absolute;
+bottom: 0;
+left: 0;
+width: 100%;
+height: 2px;
+background:initial;
+content: '';
+-webkit-transition: -webkit-transform 0.35s;
+-moz-transition: transform 0.35s;
+transition: transform 0.35s;
+-webkit-transform: translate3d(-100%,0,0);
+-moz-transform: translate3d(-100%,0,0);
+transform: translate3d(-100%,0,0);
+-o-transform: translate3d(-100%,0,0);
+-ms-transform: translate3d(-100%,0,0);
+}
+.grid:hover h3::after {
+-webkit-transform: translate3d(0,0,0);
+-moz-transform: translate3d(0,0,0);
+transform: translate3d(0,0,0);
+-o-transform: translate3d(0,0,0);
+-ms-transform: translate3d(0,0,0);
+}
+.grid:hover h3 {
+-moz-opacity:1;
+opacity:1;
+}
+.grid p {
+    padding: 1em 0 0;
+-moz-opacity:1;
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+-moz-transition: opacity 0.35s, transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(100%,0,0);
+-moz-transform: translate3d(100%,0,0);
+    transform: translate3d(100%,0,0);
+-o-transform: translate3d(100%,0,0);
+-ms-transform: translate3d(100%,0,0);
+    color: #fff;
+    letter-spacing: 2px;
+}
+.grid:hover p {
+-moz-opacity: 1;
+opacity: 1;
+-webkit-transform: translate3d(0,0,0);
+-moz-transform: translate3d(0,0,0);
+transform: translate3d(0,0,0);
+-o-transform: translate3d(0,0,0);
+-ms-transform: translate3d(0,0,0);
+}
 
 body{
 	margin:0;
@@ -35,14 +196,14 @@ body a:hover{
 
 /*--banner--*/
 .banner {
-	background:url(../images/topBack.jpg)no-repeat center 0px;
+	/* background:url(../images/topBack.jpg)no-repeat center 0px; */
 	-webkit-background-size:cover;
 	background-size:cover;
 	-moz-background-size:cover;
 	position: relative;
 }
 .banner-info{
-	background: url(../images/dott.png)repeat 0px 0px;
+	/* background: url(../images/dott.png)repeat 0px 0px; */
 	padding: 4em 0;
 }
 .header-left img {
