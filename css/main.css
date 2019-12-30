@@ -4,11 +4,26 @@
         width: 100%;
     margin: auto;
 }
+.textLeft {
+    margin-left: 4px;
+    margin-top: 4px;
+}
 
+.textLeft2 {
+    margin-left: 8px;
+    margin-top: 4px;
+}
 
+.textLeft3 {
+    margin-left: 12px;
+    margin-top: 4px;
+}
 .top h1 {
     font-size: 64.8px;
     margin-bottom: 5px;
+}
+.myImg {
+    max-width: 232px;
 }
 @media (min-width: 768px){
     .top h1 {
@@ -351,7 +366,6 @@ h3.title {
 }
 p {
     font-size: 1.5em;
-    color: #999;
     line-height: 1.8em;
 }
 .about-right {
@@ -1170,6 +1184,7 @@ h3.title {
 }
 
 }
+
 /*--//responsive-design---*/
 
 .clear:before,
