@@ -59,7 +59,7 @@ const theme = createTheme({
 
 interface Skill {
   name: string;
-  category: 'Frontend' | 'Backend' | 'Cloud' | 'Data';
+  category:  'Backend' | 'Frontend' | 'Cloud' | 'Data';
 }
 
 interface Experience {
@@ -82,34 +82,52 @@ const Portfolio: React.FC = () => {
     { name: 'HTML5/CSS', category: 'Frontend' },
     { name: 'React Redux', category: 'Frontend' },
     // Backend
+    { name: 'Python', category: 'Backend' },
     { name: 'C#/.NET', category: 'Backend' },
     { name: 'Java', category: 'Backend' },
     { name: 'REST APIs', category: 'Backend' },
-    { name: 'PostgreSQL', category: 'Backend' },
-    { name: 'Python', category: 'Backend' },
+    { name: 'PostgreSQL/KQL/SQL', category: 'Backend' },
     // Cloud
     { name: 'Azure Portal', category: 'Cloud' },
-    { name: 'ARM Templates', category: 'Cloud' },
+    { name: 'ARM/Bicep', category: 'Cloud' },
     { name: 'Azure Synapse', category: 'Data' },
     { name: 'Azure Data Factory', category: 'Data' },
   ];
 
   const experiences: Experience[] = [
     {
-      title: 'Software Engineer 2',
-      company: 'Microsoft - C + AI Silver - Azure Gov Tooling',
+      title: 'Software Engineer 2 61/62',
+      company: 'Microsoft - C + AI Silver - Mission Apps',
       logo: '/images/microsoft-logo.png',
-      period: 'Nov 2021 - Present',
+      period: 'December 2023 - Present',
+      location: 'Redmond, WA',
+      description: 'Leading development of critical government compliance applications including Azure ConMon and Microsoft Personnel systems.',
+      achievements: [
+        'Tech Lead for both MTAC & ConMon applications under C + AI Silver',
+        'Tutored and mentored engineers on MTAC and ConMon teams, fostering skill development and knowledge sharing',
+        'Integrated M365 data onto ConMon Application reducing manual effort by 40+ hours per month',
+        'Onboarded Database and BaselineOS Assets onto ConMon Application, enhancing data comprehensiveness and saving 40+ hours per month',
+        'Worked with Stakeholders to create high impact features streamlining POAM report preparation and cutting 60+ hours per month',
+        'Delivered ConMon Resiliency Feature reducing resolution time from 2 hours to 15 minutes and Achieved 75% reduction in ICMS incidents for ConMon Data Pipelines',
+        'Spearheading S360 Security Initiative on ConMon',
+        'Spearheading Cline AI Initiative on Mission Apps'
+      ],
+      technologies: ['React.js', 'TypeScript', 'C#', 'Azure Synapse', 'Azure Data Factory', 'ARM Templates']
+    },
+    {
+      title: 'Software Engineer 1 - 60',
+      company: 'Microsoft - Strategic Missions and Technologies - Mission Apps',
+      logo: '/images/microsoft-logo.png',
+      period: 'Nov 2021 - December 2023',
       location: 'Redmond, WA',
       description: 'Leading development of critical government compliance applications including Azure ConMon and Microsoft Personnel systems.',
       achievements: [
         'Led migration of legacy Azure ConMon (FedRAMP Continuous Monitoring) to modernized web application across multiple clouds',
         'Reduced monthly operational costs by $25,000+ through system modernization and optimization',
         'Streamlined POAM report preparation, cutting 120+ hours per month for U.S. government submissions',
-        'Integrated M365 data reducing manual effort by 40+ hours per month',
-        'Delivered ConMon Resiliency Feature reducing resolution time from 2 hours to 15 minutes',
-        'Achieved 75% reduction in ICMS incidents for Microsoft Personnel application',
-        'Optimized rendering performance reducing unnecessary re-renders by 95%'
+        'Optimized rendering performance reducing unnecessary re-renders by 95%',
+        'Worked on Personnel Project to build internal Microsoft employee management system for government contractors',
+        'Delivered Features for Government Dynamic Forms and Security Clearance Management'
       ],
       technologies: ['React.js', 'TypeScript', 'C#', 'Azure Synapse', 'Azure Data Factory', 'ARM Templates']
     },
@@ -137,11 +155,10 @@ const Portfolio: React.FC = () => {
       location: 'San Diego, CA',
       description: 'Developed major features for MAFPS web application with focus on performance optimization and testing.',
       achievements: [
-        'Developed major features for MAFPS (Mobility Air Forces Automated Flight Planning Service)',
-        'Improved feature performance by ~10% through memory and performance analysis',
+        'Independently delivered major features for MAFPS (Mobility Air Forces Automated Flight Planning Service)',
+        'Improved feature performance by ~10% through memory and performance analysis and optimization',
         'Increased test coverage from 68% to 83% using Enzyme unit tests',
-        'Participated in Agile Kanban development and customer design meetings',
-        'Integrated open-source components to accelerate development'
+        'Integrated and edited source open-source components to accelerate development'
       ],
       technologies: ['React.js', 'JavaScript', 'React Redux', 'Enzyme', 'Jest']
     }
@@ -158,8 +175,8 @@ const Portfolio: React.FC = () => {
   );
 
   const skillCategories = {
-    'Frontend': skills.filter(s => s.category === 'Frontend'),
     'Backend': skills.filter(s => s.category === 'Backend'),
+    'Frontend': skills.filter(s => s.category === 'Frontend'),
     'Cloud': skills.filter(s => s.category === 'Cloud'),
     'Data': skills.filter(s => s.category === 'Data'),
   };
@@ -222,6 +239,7 @@ const Portfolio: React.FC = () => {
                   <Button
                     variant="outlined"
                     startIcon={<Email />}
+                    href="mailto:aliisforlive@gmail.com"
                     sx={{ color: 'white', borderColor: 'white', '&:hover': { bgcolor: 'rgba(255,255,255,0.1)' } }}
                     size="large"
                   >
@@ -230,6 +248,9 @@ const Portfolio: React.FC = () => {
                   <Button
                     variant="outlined"
                     startIcon={<LinkedIn />}
+                    href="https://www.linkedin.com/in/andrewtli/"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     sx={{ color: 'white', borderColor: 'white', '&:hover': { bgcolor: 'rgba(255,255,255,0.1)' } }}
                     size="large"
                   >
@@ -238,6 +259,9 @@ const Portfolio: React.FC = () => {
                   <Button
                     variant="outlined"
                     startIcon={<GitHub />}
+                    href="https://github.com/Atl043"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     sx={{ color: 'white', borderColor: 'white', '&:hover': { bgcolor: 'rgba(255,255,255,0.1)' } }}
                     size="large"
                   >
@@ -261,7 +285,8 @@ const Portfolio: React.FC = () => {
                     Summary
                   </Typography>
                   <Typography variant="body1" color="text.secondary" sx={{ lineHeight: 1.7 }}>
-                    Software Engineer at Microsoft with 6 years of professional experience developing 
+                    Software Engineer 2 at Microsoft and serving as Tech Lead of MTAC(Mission trust assurance Center) - 
+                    ConMon application under C + AI Silver. I have 6+ years of professional experience developing 
                     scalable Single Page Applications using React.js, building RESTful APIs with .NET (C#), 
                     and optimizing cloud deployments. Extensive experience in ELT pipelines, transforming 
                     trillions of records into actionable insights for monthly reports submitted to the U.S. government.
