@@ -70,6 +70,7 @@ interface Experience {
   description: string;
   achievements: string[];
   technologies: string[];
+  logo: string;
 }
 
 const Portfolio: React.FC = () => {
@@ -97,6 +98,7 @@ const Portfolio: React.FC = () => {
     {
       title: 'Software Engineer 2',
       company: 'Microsoft - C + AI Silver - Azure Gov Tooling',
+      logo: '/images/microsoft-logo.png',
       period: 'Nov 2021 - Present',
       location: 'Redmond, WA',
       description: 'Leading development of critical government compliance applications including Azure ConMon and Microsoft Personnel systems.',
@@ -114,6 +116,7 @@ const Portfolio: React.FC = () => {
     {
       title: 'Software Engineer 2',
       company: 'Northrop Grumman - Mission Systems',
+      logo: '/images/northrop-grumman-logo.png',
       period: 'July 2020 - Oct 2021',
       location: 'San Diego, CA',
       description: 'Developed features for JP2008 SATCOM web application focusing on full-stack development and code quality.',
@@ -129,6 +132,7 @@ const Portfolio: React.FC = () => {
     {
       title: 'Software Engineer 1',
       company: 'BAE Systems - Electronic Systems Sector',
+      logo: '/images/bae-systems-logo.png',
       period: 'June 2019 - July 2020',
       location: 'San Diego, CA',
       description: 'Developed major features for MAFPS web application with focus on performance optimization and testing.',
@@ -381,7 +385,18 @@ const Portfolio: React.FC = () => {
                   {experiences.map((exp, index) => (
                     <Box key={index} sx={{ mb: index < experiences.length - 1 ? 6 : 0 }}>
                       <Box sx={{ display: 'flex', alignItems: 'flex-start', gap: 2, mb: 3 }}>
-                        <Avatar sx={{ bgcolor: 'primary.light', mt: 0.5 }}>
+                        <Avatar 
+                          src={exp.logo}
+                          alt={exp.company}
+                          sx={{ 
+                            mt: 0.5,
+                            width: 40,
+                            height: 40,
+                            bgcolor: 'white',
+                            border: '1px solid',
+                            borderColor: 'divider'
+                          }}
+                        >
                           <Work />
                         </Avatar>
                         <Box sx={{ flex: 1 }}>
