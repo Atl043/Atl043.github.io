@@ -20,7 +20,8 @@ import {
   Speed,
   CloudQueue,
   TrendingUp,
-  AttachMoney
+  AttachMoney,
+  TrendingDown
 } from '@mui/icons-material';
 
 interface Project {
@@ -54,43 +55,38 @@ const projects: Project[] = [
         metric: "Performance",
         value: "95% improvement",
         icon: <TrendingUp />
-      }
+      },
+      {
+        metric: "Reliability",
+        value: "85% Decrease in Incidents",
+        icon: <TrendingDown />
+      },
     ],
     achievements: [
-      "Migrated legacy system to modern web application across multiple clouds",
-      "Streamlined POAM report preparation for U.S. government submissions",
-      "Integrated M365 data reducing manual effort by 40+ hours monthly",
-      "Implemented real-time data processing and validation"
+      'Tutored and mentored engineers on MTAC and ConMon teams, fostering skill development and knowledge sharing',
+        'Integrated M365 data onto ConMon Application reducing manual effort by 40+ hours per month',
+        'Onboarded Database and BaselineOS Assets onto ConMon Application, enhancing data comprehensiveness and saving 40+ hours per month',
+        'Worked with Stakeholders to create high impact features streamlining POAM report preparation and cutting 60+ hours per month',
+        'Delivered ConMon Resiliency Feature reducing resolution time from 2 hours to 15 minutes and Achieved 85% reduction in ICMS incidents for ConMon Data Pipelines',
+        'Spearheading S360 Security Initiative on ConMon',
+        'Spearheading Cline AI Initiative on Mission Apps'
     ],
-    technologies: ["React.js", "TypeScript", "Azure Synapse", "Azure Data Factory", "C#", ".NET"]
+    technologies: ["React.js", "TypeScript", "Azure Synapse", "Azure Data Factory", "C#", ".NET", "Python", "ARM Templates", "Azure DevOps"]
   },
   {
     title: "Microsoft Personnel Systems",
     description: "Enhanced and optimized critical personnel management systems for Microsoft's government sector, focusing on security compliance and performance improvements.",
     impact: [
-      {
-        metric: "Incident Reduction",
-        value: "75%",
-        icon: <Security />
-      },
-      {
-        metric: "System Uptime",
-        value: "99.99%",
-        icon: <CloudQueue />
-      },
-      {
-        metric: "Response Time",
-        value: "87% faster",
-        icon: <Speed />
-      }
     ],
     achievements: [
-      "Achieved 75% reduction in ICMS incidents",
-      "Implemented automated security compliance checks",
-      "Optimized rendering performance reducing unnecessary re-renders",
-      "Developed real-time monitoring dashboard"
+       'Led migration of legacy Azure ConMon (FedRAMP Continuous Monitoring) to modernized web application across multiple clouds',
+        'Reduced monthly operational costs by $25,000+ through system modernization and optimization',
+        'Streamlined POAM report preparation, cutting 120+ hours per month for U.S. government submissions',
+        'Optimized rendering performance reducing unnecessary re-renders by 95%',
+        'Worked on Personnel Project to build internal Microsoft employee management system for government contractors',
+        'Delivered Features for Government Dynamic Forms and Security Clearance Management'
     ],
-    technologies: ["React.js", "TypeScript", "C#", "Azure Services", "Redux", "Material UI"]
+    technologies: ["React.js", "TypeScript", "C#", "Arm Templates", "Azure DevOps"]
   }
 ];
 

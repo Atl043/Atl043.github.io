@@ -101,14 +101,13 @@ const Portfolio: React.FC = () => {
       logo: '/images/microsoft-logo.png',
       period: 'December 2023 - Present',
       location: 'Redmond, WA',
-      description: 'Leading development of critical government compliance applications including Azure ConMon and Microsoft Personnel systems.',
+      description: 'Tech Lead for both MTAC & ConMon applications leading development of critical government compliance applications including Azure ConMon and Microsoft Personnel systems.',
       achievements: [
-        'Tech Lead for both MTAC & ConMon applications under C + AI Silver',
         'Tutored and mentored engineers on MTAC and ConMon teams, fostering skill development and knowledge sharing',
         'Integrated M365 data onto ConMon Application reducing manual effort by 40+ hours per month',
         'Onboarded Database and BaselineOS Assets onto ConMon Application, enhancing data comprehensiveness and saving 40+ hours per month',
         'Worked with Stakeholders to create high impact features streamlining POAM report preparation and cutting 60+ hours per month',
-        'Delivered ConMon Resiliency Feature reducing resolution time from 2 hours to 15 minutes and Achieved 75% reduction in ICMS incidents for ConMon Data Pipelines',
+        'Delivered ConMon Resiliency Feature reducing resolution time from 2 hours to 15 minutes and Achieved 85% reduction in ICMS incidents for ConMon Data Pipelines',
         'Spearheading S360 Security Initiative on ConMon',
         'Spearheading Cline AI Initiative on Mission Apps'
       ],
@@ -120,7 +119,7 @@ const Portfolio: React.FC = () => {
       logo: '/images/microsoft-logo.png',
       period: 'Nov 2021 - December 2023',
       location: 'Redmond, WA',
-      description: 'Leading development of critical government compliance applications including Azure ConMon and Microsoft Personnel systems.',
+      description: 'Software engineer Independently developed critical government compliance features for Azure ConMon and Microsoft Personnel systems.',
       achievements: [
         'Led migration of legacy Azure ConMon (FedRAMP Continuous Monitoring) to modernized web application across multiple clouds',
         'Reduced monthly operational costs by $25,000+ through system modernization and optimization',
@@ -207,6 +206,8 @@ const Portfolio: React.FC = () => {
             <Grid container spacing={4} alignItems="center">
               <Grid item xs={12} md={3} sx={{ textAlign: { xs: 'center', md: 'left' } }}>
                 <Avatar
+                  src="/images/AndrewMtRainerPhoto.jpg"
+                  alt="Andrew Li"
                   sx={{ 
                     width: 180, 
                     height: 180, 
@@ -215,11 +216,7 @@ const Portfolio: React.FC = () => {
                     border: '4px solid white',
                     bgcolor: 'rgba(255,255,255,0.2)'
                   }}
-                >
-                  <Typography variant="h2" fontWeight="bold">
-                    AL
-                  </Typography>
-                </Avatar>
+                />
               </Grid>
               <Grid item xs={12} md={9}>
                 <Typography variant="h2" component="h1" gutterBottom>
