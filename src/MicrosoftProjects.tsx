@@ -44,31 +44,35 @@ const projects: Project[] = [
     impact: [
       {
         metric: "Mentorship",
-        value: "Grew Teammate's Velocity by 20%",
+        value: "Grew Teammate's Velocity by 25%",
         icon: <People />
       },
       {
         metric: "Time Saved",
-        value: "100+ hours/month by delivering high impact features",
+        value: "120+ hours/month by delivering high impact features",
         icon: <SwapHoriz />
       },
       {
-        metric: "Onboarding",
-        value: "Virtual DB onboarded 3million+ records daily",
-        icon: <Storage />
+        metric: "3 Jobs in 1",
+        value: "Tech Lead, IC Software Engineer, Product Manager",
+        icon: <People />
       },
     ],
     achievements: [
         'Became the Tech Lead for 2 projects - both MTAC & ConMon applications under C + AI Silver - Mission Apps',
+        'Serving as Temp Product Manager for ConMon project, coordinating between multiple teams and stakeholders to ensure timely delivery of features and bug fixes',
         'Tutored and mentored engineers on MTAC and ConMon teams, fostering skill development and knowledge sharing',
         'Worked with Stakeholders to create new high impact features and swap out existing low impact features cutting 60+ hours per month',
+        'Managed a full slate of features, balancing stakeholder priorities, timelines, and emergency requests, and security requirements',
         'Spearheading S360 Security Initiative on ConMon and MTAC',
-        'Spearheading Cline AI Initiative on Mission Apps'
+        'Spearheading Cline AI Initiative on Mission Apps',
+        'Serving as Temp Product Manager for ConMon project, coordinating between multiple teams and stakeholders to ensure timely delivery of features and bug fixes',
+        'Onboarded Several High Impact Features automating a total estimated 120+ hours per month of manual work for stakeholders',
     ],
     technologies: ["React.js", "TypeScript", "Azure Synapse", "Azure Data Factory", "C#", ".NET", "Python", "ARM Templates", "Azure DevOps"]
   },
   {
-    title: "BaselineOS and PhysicalDB Assets Onboarding + Resiliency Feature",
+    title: "ConMon Tech Lead - Delivering BaselineOS and PhysicalDB Assets Onboarding + Resiliency Feature + More",
     description: "Led the complete migration of legacy Azure ConMon (FedRAMP Continuous Monitoring) to a modernized compliance web application, processing trillions of records from 25+ data sources for U.S. government submissions.",
     impact: [
       {
@@ -78,7 +82,7 @@ const projects: Project[] = [
       },
       {
         metric: "Performance",
-        value: "10+ Billion Records Processed Daily",
+        value: "10+ Billion Additional Records Processed Daily",
         icon: <Storage />
       },
       {
@@ -88,10 +92,12 @@ const projects: Project[] = [
       },
     ],
     achievements: [
+        'ConMon Tech Lead - managed a full slate of features, balancing stakeholder prioties, timelines, and emergency requests',
         'Onboarded Database and BaselineOS Assets onto ConMon Application, enhancing data comprehensiveness and saving 20+ hours per month',
         'Delivered ConMon Resiliency Feature reducing resolution time from 2 hours to 15 minutes and Achieved 85% reduction in ICMS incidents for ConMon Data Pipelines',
         'Led S360 Security Initiative on ConMon',
-        'Spearheading Cline AI Initiative on Mission Apps'
+        'For specific emergency rollback stakeholder requests, I communicated mutliple solutions and tradeoffs, ultimately delivering a solution that satisfied all parties and fit our timeline',
+        'Increased personal velocity by improving own processes and improved context switching, and learned how to use AI tools to improve productivity',
     ],
     technologies: ["React.js", "TypeScript", "Azure Synapse", "Azure Data Factory", "C#", ".NET", "Python", "ARM Templates", "Azure DevOps"]
   },
@@ -112,6 +118,8 @@ const projects: Project[] = [
     ],
     achievements: [
         'Integrated M365 data onto ConMon Application reducing manual effort by 40+ hours per month',
+        'Identified and resolved critical data discrepancies between M365 and ConMon datasets, ensuring data integrity and reliability',
+        'Collaborated with M365 teams to streamline data ingestion processes, enhancing overall system efficiency',
     ],
     technologies: ["React.js", "TypeScript", "Azure Synapse", "Azure Data Factory", "C#", ".NET", "Python", "ARM Templates", "Azure DevOps"]
   },
@@ -131,25 +139,26 @@ const projects: Project[] = [
       },
       {
         metric: "Performance",
-        value: "10+ Billion Records Processed Daily",
+        value: "2 Billion Records Processed Daily",
         icon: <Storage />
       },
       {
         metric: "Reliability",
-        value: "85% Decrease in Incidents",
+        value: "90% Decrease in need for manual intervention compared to Legacy System",
+        icon: <TrendingDown />
+      },
+      {
+        metric: "Speed",
+        value: "10hrs => 2.5hrs Pipeline RunTime",
         icon: <TrendingDown />
       },
     ],
     achievements: [
       'Led development of data pipelines and ETL processes using Azure Synapse to aggregate and process data from 25+ sources',
+      'Created a Roadmap of required data processing and ingestion tasks to onboard Azure data onto ConMon Application',
       'Created over 100 dataflows and 30+ pipelines to automate data ingestion, transformation, and loading on a daily basis',
-      'Tutored and mentored engineers on MTAC and ConMon teams, fostering skill development and knowledge sharing',
-        'Integrated M365 data onto ConMon Application reducing manual effort by 40+ hours per month',
-        'Onboarded Database and BaselineOS Assets onto ConMon Application, enhancing data comprehensiveness and saving 40+ hours per month',
-        'Worked with Stakeholders to create high impact features streamlining POAM report preparation and cutting 60+ hours per month',
-        'Delivered ConMon Resiliency Feature reducing resolution time from 2 hours to 15 minutes and Achieved 85% reduction in ICMS incidents for ConMon Data Pipelines',
-        'Spearheading S360 Security Initiative on ConMon',
-        'Spearheading Cline AI Initiative on Mission Apps'
+      'Mapped required inputs and outputs of several data processes to figure out how to create POA&Ms more efficiently',
+      'Proposed and Delivered Independently effort to reduce overall pipeline from 10hrs long to 2.5hrs in length'
     ],
     technologies: ["React.js", "TypeScript", "Azure Synapse", "Azure Data Factory", "C#", ".NET", "Python", "ARM Templates", "Azure DevOps"]
   },
@@ -159,12 +168,9 @@ const projects: Project[] = [
     impact: [
     ],
     achievements: [
-       'Led migration of legacy Azure ConMon (FedRAMP Continuous Monitoring) to modernized web application across multiple clouds',
-        'Reduced monthly operational costs by $25,000+ through system modernization and optimization',
-        'Streamlined POAM report preparation, cutting 120+ hours per month for U.S. government submissions',
-        'Optimized rendering performance reducing unnecessary re-renders by 95%',
-        'Worked on Personnel Project to build internal Microsoft employee management system for government contractors',
-        'Delivered Features for Government Dynamic Forms and Security Clearance Management'
+        'Optimized rendering performance reducing unnecessary re-renders by 95% for multiple personnel user interfaces',
+        'Worked on the Personnel Project to deliver features for new dynamic Government Forms page',
+        'Delivered Security Clearance Management features for Personnel application',
     ],
     technologies: ["React.js", "TypeScript", "C#", "Arm Templates", "Azure DevOps"]
   }

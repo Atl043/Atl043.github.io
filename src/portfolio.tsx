@@ -107,7 +107,7 @@ const Portfolio: React.FC = () => {
         'Onboarded Database and BaselineOS Assets onto ConMon Application, enhancing data comprehensiveness and saving 40+ hours per month',
         'Worked with Stakeholders to create high impact features streamlining POAM report preparation and cutting 60+ hours per month',
         'Delivered ConMon Resiliency Feature reducing resolution time from 2 hours to 15 minutes and Achieved 85% reduction in ICMS incidents for ConMon Data Pipelines',
-        'Spearheading S360 Security Initiative on ConMon',
+        'Spearheading S360 Security Initiative on ConMon and Mtac Applications',
         'Spearheading Cline AI Initiative on Mission Apps'
       ],
       technologies: ['React.js', 'TypeScript', 'C#', 'Azure Synapse', 'Azure Data Factory', 'ARM Templates']
@@ -120,12 +120,11 @@ const Portfolio: React.FC = () => {
       location: 'Redmond, WA',
       description: 'Software engineer Independently developed critical government compliance features for Azure ConMon and Microsoft Personnel systems.',
       achievements: [
-        'Led migration of legacy Azure ConMon (FedRAMP Continuous Monitoring) to modernized web application across multiple clouds',
+        'Led the Data Pipeline migration of legacy Azure ConMon (FedRAMP Continuous Monitoring) to modernized web application across multiple clouds',
         'Reduced monthly operational costs by $25,000+ through system modernization and optimization',
         'Streamlined POAM report preparation, cutting 120+ hours per month for U.S. government submissions',
         'Optimized rendering performance reducing unnecessary re-renders by 95%',
-        'Worked on Personnel Project to build internal Microsoft employee management system for government contractors',
-        'Delivered Features for Government Dynamic Forms and Security Clearance Management'
+        'Worked on the Personnel Project to deliver features for Government Dynamic Forms and Security Clearance Management'
       ],
       technologies: ['React.js', 'TypeScript', 'C#', 'Azure Synapse', 'Azure Data Factory', 'ARM Templates']
     },
