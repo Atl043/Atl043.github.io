@@ -16,12 +16,13 @@ import {
 } from '@mui/material';
 import {
   CheckCircle,
-  Security,
   Speed,
-  CloudQueue,
   TrendingUp,
   AttachMoney,
-  TrendingDown
+  TrendingDown,
+  Storage,
+  People,
+  SwapHoriz
 } from '@mui/icons-material';
 
 interface Project {
@@ -38,6 +39,83 @@ interface Project {
 
 const projects: Project[] = [
   {
+    title: "Tech Lead - MTAC & ConMon Applications and Serving as Temp PM for ConMon",
+    description: "Leading Two projects under C + AI Silver - Mission Apps. MTAC is a critical compliance application used by US Government to track and manage security compliance of Microsoft Cloud offerings. ConMon is a FedRAMP Continuous Monitoring application used by US Government to track and manage security compliance of Microsoft Cloud offerings. Both applications process trillions of records from 25+ data sources for U.S. government submissions and have 6 different stakeholder teams to manage relationship with.",
+    impact: [
+      {
+        metric: "Mentorship",
+        value: "Grew Teammate's Velocity by 20%",
+        icon: <People />
+      },
+      {
+        metric: "Time Saved",
+        value: "100+ hours/month by delivering high impact features",
+        icon: <SwapHoriz />
+      },
+      {
+        metric: "Onboarding",
+        value: "Virtual DB onboarded 3million+ records daily",
+        icon: <Storage />
+      },
+    ],
+    achievements: [
+        'Became the Tech Lead for 2 projects - both MTAC & ConMon applications under C + AI Silver - Mission Apps',
+        'Tutored and mentored engineers on MTAC and ConMon teams, fostering skill development and knowledge sharing',
+        'Worked with Stakeholders to create new high impact features and swap out existing low impact features cutting 60+ hours per month',
+        'Spearheading S360 Security Initiative on ConMon and MTAC',
+        'Spearheading Cline AI Initiative on Mission Apps'
+    ],
+    technologies: ["React.js", "TypeScript", "Azure Synapse", "Azure Data Factory", "C#", ".NET", "Python", "ARM Templates", "Azure DevOps"]
+  },
+  {
+    title: "BaselineOS and PhysicalDB Assets Onboarding + Resiliency Feature",
+    description: "Led the complete migration of legacy Azure ConMon (FedRAMP Continuous Monitoring) to a modernized compliance web application, processing trillions of records from 25+ data sources for U.S. government submissions.",
+    impact: [
+      {
+        metric: "Time Saved",
+        value: "120+ hours/month",
+        icon: <Speed />
+      },
+      {
+        metric: "Performance",
+        value: "10+ Billion Records Processed Daily",
+        icon: <Storage />
+      },
+      {
+        metric: "Reliability",
+        value: "85% Decrease in Incidents",
+        icon: <TrendingDown />
+      },
+    ],
+    achievements: [
+        'Onboarded Database and BaselineOS Assets onto ConMon Application, enhancing data comprehensiveness and saving 20+ hours per month',
+        'Delivered ConMon Resiliency Feature reducing resolution time from 2 hours to 15 minutes and Achieved 85% reduction in ICMS incidents for ConMon Data Pipelines',
+        'Led S360 Security Initiative on ConMon',
+        'Spearheading Cline AI Initiative on Mission Apps'
+    ],
+    technologies: ["React.js", "TypeScript", "Azure Synapse", "Azure Data Factory", "C#", ".NET", "Python", "ARM Templates", "Azure DevOps"]
+  },
+  {
+    title: "M365 ConMon Onboarding",
+    description: "Led the complete migration of legacy Azure ConMon (FedRAMP Continuous Monitoring) to a modernized compliance web application, processing trillions of records from 25+ data sources for U.S. government submissions.",
+    impact: [
+      {
+        metric: "Cost Savings",
+        value: "$10K+/month",
+        icon: <AttachMoney />
+      },
+      {
+        metric: "Time Saved",
+        value: "40+ hours/month",
+        icon: <Speed />
+      }
+    ],
+    achievements: [
+        'Integrated M365 data onto ConMon Application reducing manual effort by 40+ hours per month',
+    ],
+    technologies: ["React.js", "TypeScript", "Azure Synapse", "Azure Data Factory", "C#", ".NET", "Python", "ARM Templates", "Azure DevOps"]
+  },
+  {
     title: "Azure ConMon Modernization",
     description: "Led the complete migration of legacy Azure ConMon (FedRAMP Continuous Monitoring) to a modernized compliance web application, processing trillions of records from 25+ data sources for U.S. government submissions.",
     impact: [
@@ -53,8 +131,8 @@ const projects: Project[] = [
       },
       {
         metric: "Performance",
-        value: "95% improvement",
-        icon: <TrendingUp />
+        value: "10+ Billion Records Processed Daily",
+        icon: <Storage />
       },
       {
         metric: "Reliability",
@@ -63,6 +141,8 @@ const projects: Project[] = [
       },
     ],
     achievements: [
+      'Led development of data pipelines and ETL processes using Azure Synapse to aggregate and process data from 25+ sources',
+      'Created over 100 dataflows and 30+ pipelines to automate data ingestion, transformation, and loading on a daily basis',
       'Tutored and mentored engineers on MTAC and ConMon teams, fostering skill development and knowledge sharing',
         'Integrated M365 data onto ConMon Application reducing manual effort by 40+ hours per month',
         'Onboarded Database and BaselineOS Assets onto ConMon Application, enhancing data comprehensiveness and saving 40+ hours per month',

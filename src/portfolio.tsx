@@ -15,7 +15,6 @@ import {
   ListItemIcon,
   ListItemText,
   Divider,
-  LinearProgress,
   Stack
 } from '@mui/material';
 import {
