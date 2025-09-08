@@ -17,7 +17,6 @@ import {
 import {
   CheckCircle,
   Speed,
-  TrendingUp,
   AttachMoney,
   TrendingDown,
   Storage,
@@ -28,6 +27,7 @@ import {
 interface Project {
   title: string;
   description: string;
+  timeline: string;
   impact: {
     metric: string;
     value: string;
@@ -40,7 +40,8 @@ interface Project {
 const projects: Project[] = [
   {
     title: "Tech Lead - MTAC & ConMon Applications and Serving as Temp PM for ConMon",
-    description: "Leading Two projects under C + AI Silver - Mission Apps. MTAC is a critical compliance application used by US Government to track and manage security compliance of Microsoft Cloud offerings. ConMon is a FedRAMP Continuous Monitoring application used by US Government to track and manage security compliance of Microsoft Cloud offerings. Both applications process trillions of records from 25+ data sources for U.S. government submissions and have 6 different stakeholder teams to manage relationship with.",
+    description: "Leading Two projects under C + AI Silver - Mission Apps. MTAC is a critical compliance application used by US Government to track and manage security compliance of Microsoft Cloud offerings. ConMon is a FedRAMP Continuous Monitoring application used by US Government to track and manage security compliance of Microsoft Cloud offerings for Azure and M365. Both applications process trillions of records from 25+ data sources for U.S. government submissions and have 6 different stakeholder teams to manage relationship with.",
+    timeline: "April 2025 - Present",
     impact: [
       {
         metric: "Mentorship",
@@ -54,7 +55,7 @@ const projects: Project[] = [
       },
       {
         metric: "3 Jobs in 1",
-        value: "Tech Lead, IC Software Engineer, Product Manager",
+        value: "Tech Lead, IC SWE, Product Manager",
         icon: <People />
       },
     ],
@@ -62,7 +63,7 @@ const projects: Project[] = [
         'Became the Tech Lead for 2 projects - both MTAC & ConMon applications under C + AI Silver - Mission Apps',
         'Serving as Temp Product Manager for ConMon project, coordinating between multiple teams and stakeholders to ensure timely delivery of features and bug fixes',
         'Tutored and mentored engineers on MTAC and ConMon teams, fostering skill development and knowledge sharing',
-        'Worked with Stakeholders to create new high impact features and swap out existing low impact features cutting 60+ hours per month',
+        'Worked with Stakeholders to swap out existing low impact features with new high impact features cutting 60+ hours per month',
         'Managed a full slate of features, balancing stakeholder priorities, timelines, and emergency requests, and security requirements',
         'Spearheading S360 Security Initiative on ConMon and MTAC',
         'Spearheading Cline AI Initiative on Mission Apps',
@@ -74,6 +75,7 @@ const projects: Project[] = [
   {
     title: "ConMon Tech Lead - Delivering BaselineOS and PhysicalDB Assets Onboarding + Resiliency Feature + More",
     description: "Led the complete migration of legacy Azure ConMon (FedRAMP Continuous Monitoring) to a modernized compliance web application, processing trillions of records from 25+ data sources for U.S. government submissions.",
+    timeline: "March 2024 - April 2025",
     impact: [
       {
         metric: "Time Saved",
@@ -104,6 +106,7 @@ const projects: Project[] = [
   {
     title: "M365 ConMon Onboarding",
     description: "Led the complete migration of legacy Azure ConMon (FedRAMP Continuous Monitoring) to a modernized compliance web application, processing trillions of records from 25+ data sources for U.S. government submissions.",
+    timeline: "Jan 2024 - March 2024",
     impact: [
       {
         metric: "Cost Savings",
@@ -126,6 +129,7 @@ const projects: Project[] = [
   {
     title: "Azure ConMon Modernization",
     description: "Led the complete migration of legacy Azure ConMon (FedRAMP Continuous Monitoring) to a modernized compliance web application, processing trillions of records from 25+ data sources for U.S. government submissions.",
+    timeline: "May 2023 - Jan 2024",
     impact: [
       {
         metric: "Cost Savings",
@@ -158,13 +162,14 @@ const projects: Project[] = [
       'Created a Roadmap of required data processing and ingestion tasks to onboard Azure data onto ConMon Application',
       'Created over 100 dataflows and 30+ pipelines to automate data ingestion, transformation, and loading on a daily basis',
       'Mapped required inputs and outputs of several data processes to figure out how to create POA&Ms more efficiently',
-      'Proposed and Delivered Independently effort to reduce overall pipeline from 10hrs long to 2.5hrs in length'
+      'Proposed and Delivered Independently effort to reduce overall pipeline runtime from 10hrs long to 2.5hrs in length'
     ],
     technologies: ["React.js", "TypeScript", "Azure Synapse", "Azure Data Factory", "C#", ".NET", "Python", "ARM Templates", "Azure DevOps"]
   },
   {
     title: "Microsoft Personnel Systems",
     description: "Enhanced and optimized critical personnel management systems for Microsoft's government sector, focusing on security compliance and performance improvements.",
+    timeline: "November 2021 - May 2023",
     impact: [
     ],
     achievements: [
@@ -176,7 +181,7 @@ const projects: Project[] = [
   }
 ];
 
-const MicrosoftProjects: React.FC = () => {
+const MicrosoftTimeline: React.FC = () => {
   return (
     <Container maxWidth="lg" sx={{ py: 6 }}>
       {/* Header */}
@@ -192,10 +197,10 @@ const MicrosoftProjects: React.FC = () => {
         }}
       >
         <Typography variant="h2" gutterBottom>
-          Microsoft Projects
+          Microsoft Timeline + Projects
         </Typography>
         <Typography variant="h5" sx={{ opacity: 0.9 }}>
-          Showcasing key achievements and innovations at Microsoft's C + AI Silver - Azure Gov Tooling
+          Showcasing my key achievements and innovations at Microsoft November 2021 - Present
         </Typography>
       </Paper>
 
@@ -205,6 +210,10 @@ const MicrosoftProjects: React.FC = () => {
           <CardContent>
             <Typography variant="h4" gutterBottom color="primary">
               {project.title}
+            </Typography>
+            
+            <Typography variant="subtitle1" color="text.secondary" gutterBottom>
+              {project.timeline}
             </Typography>
             
             <Typography variant="body1" color="text.secondary" sx={{ mb: 4, lineHeight: 1.7 }}>
@@ -274,4 +283,4 @@ const MicrosoftProjects: React.FC = () => {
   );
 };
 
-export default MicrosoftProjects;
+export default MicrosoftTimeline;

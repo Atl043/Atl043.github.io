@@ -280,11 +280,8 @@ const Portfolio: React.FC = () => {
                     Summary
                   </Typography>
                   <Typography variant="body1" color="text.secondary" sx={{ lineHeight: 1.7 }}>
-                    Software Engineer 2 at Microsoft and serving as Tech Lead of MTAC(Mission trust assurance Center) - 
-                    ConMon application under C + AI Silver. I have 6+ years of professional experience developing 
-                    scalable Single Page Applications using React.js, building RESTful APIs with .NET (C#), 
-                    and optimizing cloud deployments. Extensive experience in ELT pipelines, transforming 
-                    trillions of records into actionable insights for monthly reports submitted to the U.S. government.
+                    Software Engineer 2 at Microsoft and serving as Tech Lead of MTAC and ConMon applications under C + AI Silver. I have 6+ years of professional Software Engineering experience and have been promoted twice in less than two years time period.
+                    I like to try new food places, ski the biggest mountains, and hike up cool trails on weekends.
                   </Typography>
                 </CardContent>
               </Card>

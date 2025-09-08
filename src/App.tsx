@@ -3,12 +3,12 @@ import { ThemeProvider, createTheme, CssBaseline } from '@mui/material';
 import { Container, AppBar, Toolbar, Typography, Box, Button } from '@mui/material';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import Portfolio from './portfolio';
-import MicrosoftProjects from './MicrosoftProjects';
+import MicrosoftTimeline from './MicrosoftTimeline';
 
 const theme = createTheme({
   palette: {
     primary: {
-      main: '#556cd6',
+      main: '#0078d4',
     },
     secondary: {
       main: '#19857b',
@@ -24,14 +24,11 @@ const App: React.FC = () => {
         <Box sx={{ flexGrow: 1 }}>
           <AppBar position="static">
             <Toolbar>
-              <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-                My Portfolio
-              </Typography>
               <Button color="inherit" component={Link} to="/">
                 Home
               </Button>
               <Button color="inherit" component={Link} to="/microsoft-projects">
-                Microsoft Projects
+                My Time at Microsoft
               </Button>
             </Toolbar>
           </AppBar>
@@ -41,7 +38,7 @@ const App: React.FC = () => {
                 <Portfolio />
               </Container>
             } />
-            <Route path="/microsoft-projects" element={<MicrosoftProjects />} />
+            <Route path="/microsoft-projects" element={<MicrosoftTimeline />} />
           </Routes>
         </Box>
       </ThemeProvider>
