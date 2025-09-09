@@ -74,7 +74,7 @@ const projects: Project[] = [
   },
   {
     title: "ConMon Tech Lead - Delivering BaselineOS and PhysicalDB Assets Onboarding + Resiliency Feature + More",
-    description: "Led the complete migration of legacy Azure ConMon (FedRAMP Continuous Monitoring) to a modernized compliance web application, processing trillions of records from 25+ data sources for U.S. government submissions.",
+    description: "Led the onboarding of Database and BaselineOS assets onto the ConMon application, enhancing data comprehensiveness and saving 20+ hours per month. Designed and delivered a resiliency feature that reduced incident resolution time from 2 hours to 15 minutes, achieving an 85% reduction in ICMS incidents for ConMon data pipelines.",
     timeline: "March 2024 - April 2025",
     impact: [
       {
@@ -105,7 +105,7 @@ const projects: Project[] = [
   },
   {
     title: "M365 ConMon Onboarding",
-    description: "Led the complete migration of legacy Azure ConMon (FedRAMP Continuous Monitoring) to a modernized compliance web application, processing trillions of records from 25+ data sources for U.S. government submissions.",
+    description: "Spearheaded the integration of Microsoft 365 data into the ConMon application, automating data ingestion and reducing manual effort by over 40 hours per month.",
     timeline: "Jan 2024 - March 2024",
     impact: [
       {
@@ -128,7 +128,7 @@ const projects: Project[] = [
   },
   {
     title: "Azure ConMon Modernization",
-    description: "Led the complete migration of legacy Azure ConMon (FedRAMP Continuous Monitoring) to a modernized compliance web application, processing trillions of records from 25+ data sources for U.S. government submissions.",
+    description: "Led the Pipeline migration of legacy Azure ConMon (FedRAMP Continuous Monitoring) to a Azure Synapse, processing trillions of records from 25+ data sources for U.S. government submissions.",
     timeline: "May 2023 - Jan 2024",
     impact: [
       {
